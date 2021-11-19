@@ -25,6 +25,15 @@ namespace emsp {
 		this->y *= tempL;
 
 	}
+	void Vector::setA(float a)
+	{
+		this->y = sin(a) * size();
+		this->x = cos(a) * size();
+	}
+	float Vector::getA()
+	{
+		return asin(this->y / size());
+	}
 	float Vector::size()
 	{
 		return sqrt(pow(x, 2) + pow(y, 2));
@@ -39,28 +48,10 @@ namespace emsp {
 		this->x *= a;
 		this->y *= a;
 	}
-	float Vector::getA()
-	{
-		return asin(this->y / size());
-	}
-	float Vector::heading()
-	{
-		return this->y / this->x;
-	}
-	void Vector::setA(float a)
-	{
-		this->y = sin(a) * size();
-		this->x = cos(a) * size();
-	}
 	void Vector::add(Vector v)
 	{
 		this->x += v.x;
 		this->y += v.y;
-	}
-
-	float Vector::angle(Vector v)
-	{
-		return mylScalar(v) / (size() * v.size());
 	}
 
 	void Vector::sub(Vector v)
