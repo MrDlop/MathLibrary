@@ -10,15 +10,13 @@ namespace emsp {
 		Vector(float length, float a, bool T);
 		Vector(Vector& v);
 		Vector();
+		void setLenght(float lenght);
+		void setA(float a);
+		float getA();
 		float size();
 		float mylScalar(Vector v);
 		void mylScalar(int a);
-		float getA();
-		void setLenght(float lenght);
-		float heading();
-		void setA(float a);
 		void add(Vector v);
-		float angle(Vector v);
 		void sub(Vector v);
 		~Vector();
 	};
