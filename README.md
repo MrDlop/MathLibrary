@@ -1,5 +1,6 @@
 # MathLibrary
-## Vector
+## Vector 
+*Все поля класса публичные*
 ### Constructors
 - Vector(float x, float y); *Задание вектора в Декартовой системе координат*
 - Vector(float length, float a, bool T); *Задание вектора в двумерной полярной системе координат*
