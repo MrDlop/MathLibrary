@@ -2,22 +2,22 @@
 #include <cmath>
 
 namespace emsp {
-	class Vector
+	class Vector2D
 	{
 	public:
 		float x = 0, y = 0;
-		Vector(float x, float y);
-		Vector(float length, float a, bool T);
-		Vector(Vector& v);
-		Vector();
+		Vector2D(float x, float y);
+		Vector2D(float length, float a, bool T);
+		Vector2D(Vector2D& v);
+		Vector2D();
 		void setLenght(float lenght);
 		void setA(float a);
 		float getA();
 		float size();
-		float mylScalar(Vector v);
+		float mylScalar(Vector2D v);
 		void mylScalar(int a);
-		void add(Vector v);
-		void sub(Vector v);
-		~Vector();
+		void add(Vector2D v);
+		void sub(Vector2D v);
+		~Vector2D();
 	};
 }
