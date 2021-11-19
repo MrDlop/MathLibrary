@@ -1,5 +1,5 @@
 # MathLibrary
-## Vector 
+## Vector2D 
 *Все поля класса публичные*
 ### Constructors
 - Vector(float x, float y); *Задание вектора в Декартовой системе координат*
